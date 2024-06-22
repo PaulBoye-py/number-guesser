@@ -22,10 +22,10 @@ Welcome to the Number Guesser Game! This simple React application allows you to 
 3. **Start the Application:**
 
    ```bash
-   npm 
+   npm run dev
    ```
 
-   The game should open automatically in your default web browser. If not, navigate to `http://localhost:3000` in your browser.
+   The game should open automatically in your default web browser. If not, navigate to `http://localhost:5173` in your browser.
 
 ### Game Rules
 
