@@ -15,7 +15,7 @@ phases:
     commands:
       - echo "Preparing deployment artifacts"
       - mkdir -p artifacts
-      - cp -r build/* artifacts/ || echo "No build directory found"
+      - cp -r dist/* artifacts/ || echo "No build directory found"
 artifacts:
   files:
     - artifacts/**/*
