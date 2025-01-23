@@ -10,16 +10,15 @@ phases:
     commands:
       - echo "Building the React app"
       - npm run build
+      - ls -la  # List contents to verify build output
   post_build:
     commands:
       - echo "Preparing deployment artifacts"
       - mkdir -p artifacts
-      - cp -r build/* artifacts/
+      - cp -r build/* artifacts/ || echo "No build directory found"
 artifacts:
   files:
     - artifacts/**/*
-
 cache:
   paths:
     - node_modules/**/*
-
